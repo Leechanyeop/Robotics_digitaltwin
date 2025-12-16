@@ -31,7 +31,7 @@ bool direction = LOW;
 // BASIC MOTOR CONTROL
 // =========================
 
-void motorOn()  { digitalWrite(ENA_PIN, LOW); }
+void motorOn()  { digitalWrite(ENA_PIN, LOW); } 
 void motorOff() { digitalWrite(ENA_PIN, HIGH); }
 
 void stepOnce(int delayTime) {
