@@ -2,6 +2,8 @@
 #define ENA_PIN 4
 #define DIR_PIN 5
 #define STP_PIN 6
+int speed = 100;
+
 
 void setup() 
 {
@@ -19,9 +21,9 @@ void loop()
   for( int i = 0; i < 500; i++)
   {
     digitalWrite(STP_PIN, HIGH);
-    delayMicroseconds(1000);
+    delayMicroseconds(speed);
     digitalWrite(STP_PIN, LOW);
-    delayMicroseconds(1000);
+    delayMicroseconds(speed);
   }
 
   digitalWrite(DIR_PIN, HIGH);
@@ -29,9 +31,9 @@ void loop()
   for( int i = 0; i < 500; i++)
   {
     digitalWrite(STP_PIN, HIGH);
-    delayMicroseconds(1000);
+    delayMicroseconds(speed);
     digitalWrite(STP_PIN, LOW);
-    delayMicroseconds(1000);
+    delayMicroseconds(speed);
   }
 
 }
